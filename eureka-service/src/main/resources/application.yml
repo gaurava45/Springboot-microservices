@@ -9,8 +9,9 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-    server:
+  server:
       waitTimeInMsWhenSyncEmpty: 0
+      maxThreadsForPeerReplication: 0
 
 zuul:
   #Service will be mapped under the /api URI
