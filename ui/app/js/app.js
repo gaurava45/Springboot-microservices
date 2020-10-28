@@ -10,8 +10,6 @@ app.controller('myCtrl', function($scope, $http) {
         $scope.quotes = response.data;
     }, function (response) {
         console.log('came here');
-        console.log('quotes response: ' + response);
-        $scope.quotes = response.data;
     });
     }
 
