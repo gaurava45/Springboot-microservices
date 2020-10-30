@@ -12,18 +12,29 @@
   <button ng-click="ctrl.retrieve();" name="button" type="button">Retrieve Price</button>
 
 
-
+<div ng-show="myvalue" class="ng-cloak">
   <table>
   <tr>
   <th>Quote</th>
   <th>Price</th>
   </tr>
-  <tr ng-repeat="q in quotes"> 
+  <tr ng-repeat="q in quotes track by $index"> 
   	<td>{{q.quote}}</td>
   	<td>{{q.price}}</td>
    	</tr>
   </table>
+</div>
 
+<div ng-show="myvalue2" class="ng-cloak">
+  <table>
+  <tr>
+  <th>Quote</th>
+  </tr>
+  <tr ng-repeat="q in quotes track by $index"> 
+  	<td>{{q}}</td>
+   	</tr>
+  </table>
+</div>
 
 
 </div>
